@@ -1,0 +1,25 @@
+.checkout-title{
+
+    margin-top: calc(70px + 2rem);
+    color:chocolate;
+    text-align: right;
+    display: grid;
+    grid-template-columns: 1fr 1fr;   
+    align-items: end;
+    // justify-content:space-evenly;
+    
+}
+.stonks{
+    justify-self: left;
+    display: inline-block;
+    width:80%;
+    max-width:300px;
+    max-height:200px;
+    height:80%;
+}
+.checkout-table{
+    position: relative;
+    
+}
+
+

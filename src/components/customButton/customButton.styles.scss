@@ -1,0 +1,125 @@
+.cus-btn{
+    display: inline-block;
+    outline:none;
+    // width:100%;
+    border:1px solid chocolate;
+    font-weight: 700;
+    // color:chocolate;
+    z-index: 3;    
+    background:transparent;
+    font-variant: small-caps;
+    font-family:'Indie Flower';
+    font-size:20px;
+    position:relative;
+    margin: 1px;   
+    font-family: 'Shadows Into Light';
+    
+}
+
+.reg{
+    background: white;
+    color:chocolate;
+}
+.inverse{
+    background: chocolate;
+    color:white;
+}
+
+.cus-btn:active{
+    background: hsl(25, 72%, 57%);
+    transform: translateY(1px);
+    // box-shadow: 0 2px white;
+}
+
+.small{
+    min-width:100px;
+    min-height:25px;
+    padding:10px;
+    margin:10px 5px;
+}
+
+.large{
+    min-width:200px;
+    min-height:50px;
+
+}
+
+
+.reg:enabled:hover{
+    color:white;
+}
+.inverse:enabled:hover{
+    color:chocolate;
+}
+
+.cus-btn:enabled:before {
+    content: "";
+    position:absolute;
+    left:0;
+    right:0;
+    top:0;
+    height:100%;
+    width:100%;
+    // background: chocolate ;
+    z-index:-2;
+    transition: transform 0.2s cubic-bezier(1, 0, 0, 1);
+}
+.inverse:before{
+    background: white;
+}
+.reg:before{
+    background: chocolate;
+}
+
+.btnup:enabled:before{
+    transform: scaleY(0);
+    transform-origin: bottom;
+}    
+.btndown:enabled:before{
+    transform: scaleY(0);
+    transform-origin: top;    
+}
+.btnleft:enabled:before{
+    transform: scaleX(0);
+    transform-origin: right;
+
+}
+.btnright:enabled:before{
+    transform: scaleX(0);
+    transform-origin: left;
+}
+
+// .reg:enabled:hover::before{
+//     color:white;
+// }
+
+.inverse:enabled:hover::before{
+    color:chocolate;
+}
+
+
+
+.btnup:enabled:hover::before{
+    transform: scaleY(1);
+
+}    
+.btndown:enabled:hover::before{
+    transform: scaleY(1);
+
+}
+.btnleft:enabled:hover::before{
+    transform: scaleX(1);
+
+}
+.btnright:enabled:hover::before{
+    transform: scaleX(1);
+
+}
+
+
+.cus-btn:disabled{
+    color:white;
+    background: hsl(25, 72%, 57%);
+    border-color: black;
+}
+

@@ -1,0 +1,60 @@
+.shop{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    color:chocolate;
+    text-align: center;
+    overflow: hidden;
+    
+    h1{
+        font-weight: 900;    
+        
+    }
+    .section{
+        position: relative;
+        
+        margin:1.5rem 0;
+        text-transform: uppercase;
+        animation: slide 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) ;
+        .heading{
+            text-align: left;
+            text-decoration: none;
+            width: fit-content;
+            font-weight: 900;    
+            padding: calc( 1rem + 1px ) 0.5rem;
+            margin: 2rem 0;
+            margin-left:5%;
+            // border:1px solid black;
+            > h2:hover{
+                cursor: pointer;
+            }
+            
+        }
+        .center{
+            padding:1rem 0;
+            border:1px solid black;
+            border-top:1px solid;
+            border-bottom:1px solid;
+            background: chocolate;
+            width:90%;
+            margin: 2rem auto;
+            color:white;
+        
+            font-weight: 900;    
+            text-align:center;
+        }
+
+    }
+    
+}
+
+
+@keyframes slide{
+    from{
+        right:-100%;
+    }
+    to{
+        right: 0%;
+    }
+
+
+}

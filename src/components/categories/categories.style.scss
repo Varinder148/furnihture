@@ -1,0 +1,108 @@
+.container-card{
+    transform: translate(0.8,0.8);
+    width:100%;
+    font-size:2rem;
+    text-align: center;
+    display: grid;
+    grid-auto-flow: column;
+    align-items:center;
+    gap:2rem;
+    grid-template-columns:1fr 1fr 7fr 1fr;
+    justify-content:space-evenly;
+    align-items: center;
+    min-height: calc(100vh - 4rem);
+    margin: 2rem auto;
+    // transition: 0.4s;
+    
+
+    :hover{
+        cursor: pointer;
+    }
+    .heading{
+        width:fit-content;
+        writing-mode:sideways-lr;
+        // transform: rotate(180deg);
+        font-weight: 700;
+        color:chocolate;
+        text-transform: uppercase;
+        // text-orientation:sideways;
+        
+    }
+    .card{
+        height:35vh;
+        color:'whitesmoke';
+        justify-content:center;
+        color:orange;
+        position: relative;
+        z-index:1;
+    }
+    .card-alt{
+        overflow: hidden;
+        color:white;
+
+        border:1px solid transparent;
+        background:transparent;
+        height:40vh;
+    
+    }
+    
+
+    .circle{
+        width:140%;
+        height:130%;
+        position: absolute;
+        z-index:-1;
+        background: chocolate;
+        // opacity: 0.1;
+        // border:2px solid black;
+        border-radius:50%;   
+    }
+    .top{
+        right:-30%;
+        top:-31%;
+        
+    }
+    .bottom{
+        left:-30%;
+        bottom:-31%;
+    }
+    
+    .bed{
+        background:url('https://www.woodenstreet.com/mobile/images-m/sub-category/beds/beds-size-1.jpg?V=1.0');
+        background-repeat: no-repeat;
+        background-position: center ;
+        background-size: cover;
+    }
+    .cabinet{
+        background: url('https://ii1.pepperfry.com/media/catalog/product/m/u/568x625/murano-cabinet-in-wenge-colour-by-hometown-murano-cabinet-in-wenge-colour-by-hometown-li0h3u.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    
+    .overlay::before{
+        content: "";
+        width:100%;
+        height:100%;
+        background:rgb(32, 32, 32);
+        position: absolute;
+        left:0;
+        top:0;
+        opacity: 0.5;
+        z-index:-1;
+    }
+
+}
+
+
+@media (max-width:600px) {
+    .container-card{
+        padding-bottom:4rem;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width:90%;
+    }
+
+
+}

@@ -1,0 +1,8 @@
+const cart={
+        TOGGLE_CART_HIDDEN:'TOGGLE_CART_HIDDEN',
+        ADD_TO_CART:'ADD_TO_CART',
+        REMOVE_CART_ITEM: 'REMOVE_CART_ITEM',
+        REMOVE_ONE_CART_ITEM:'REMOVE_ONE_CART_ITEM',
+        EMPTY_CART:'EMPTY_CART'
+}
+export default cart

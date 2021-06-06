@@ -1,0 +1,16 @@
+body {
+  background:white;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color:whitesmoke;
+  font-weight:300;
+  font-family: 'Shadows Into Light','Comic Sans MS';
+  /* display:block; */
+  /* margin:4%; */
+  letter-spacing: 2px;
+}
+
+code {
+  font-family: 'Shadows Into Light','Comic Sans MS',source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
