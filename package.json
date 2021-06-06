@@ -1,8 +1,7 @@
 {
   "name": "furnihture",
   "version": "0.1.0",
-  "private": true,
-  "homepage": "http://Varinder148.github.io/furnitureRetail",
+  "homepage": "http://Varinder148.github.io/furnihture",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.35",
     "@fortawesome/free-solid-svg-icons": "^5.15.3",
