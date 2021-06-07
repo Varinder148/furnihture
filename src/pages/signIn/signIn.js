@@ -164,7 +164,18 @@ class SignIn extends React.Component {
 
                             <CustomButton type='cus-btn large btndown' variant='reverse' onClick={async (e) => {
                                 e.preventDefault()
-                                const res = await signInWithGmail()
+                                const res = null
+                                try{
+                                res = await signInWithGmail()
+                                }
+                                catch{
+                                    this.setState({
+                                        showMsgBox: true,
+                                        status: 'error',
+                                        msg: 'Something went wrong. Please try again.'
+                                    })
+                                    return;
+                                }
                                 const profileInfo = res.additionalUserInfo.profile
                                 setUser(profileInfo)
                                 history.push('/homepage')

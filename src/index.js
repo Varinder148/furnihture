@@ -8,16 +8,19 @@ import Homepage from "./pages/homepage/homepage";
 import { Provider } from "react-redux";
 import { store, persistor } from "./redux/store";
 import { PersistGate, persistGate } from "redux-persist/integration/react";
+import WithScrollTop from "./components/withScrollTop/withScrollTop.component";
 
 ReactDOM.render(
   <Provider store={store}>
     <HashRouter basename="/">
       <PersistGate persistor={persistor}>
-        <Switch>
-          <Route exact path="/homepage" component={Homepage} />
-          <Route exact path="/" component={Homepage} />
-          <Route path="/" component={App} />
-        </Switch>
+        <WithScrollTop>
+          <Switch>
+            <Route exact path="/homepage" component={Homepage} />
+            <Route exact path="/" component={Homepage} />
+            <Route path="/" component={App} />
+          </Switch>
+        </WithScrollTop>
       </PersistGate>
     </HashRouter>
   </Provider>,
