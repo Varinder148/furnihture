@@ -7,6 +7,7 @@ import './cardHolder.styles.scss'
 
 
 const CardHolder = (props) => {
+    console.log('cardHolder')
     let { data, count } = props
     if(count){
         data=data.slice(0,count)
