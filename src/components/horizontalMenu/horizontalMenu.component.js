@@ -32,7 +32,7 @@ class HorizontalMenu extends React.Component {
     let { show, checked } = this.state;
     let { user, unsetUser, history } = this.props;
     // let { match } = history;
-    console.log(history);
+    // console.log(history);
     links = user ? { Shop: "/Shop" } : links;
 
     return (
