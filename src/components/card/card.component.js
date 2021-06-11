@@ -12,7 +12,6 @@ class CustomCard extends React.Component {
 
   render() {
     const { data, addItem } = this.props;
-    console.log("card");
     return (
       <>
         <div className="type">{data.type}</div>
