@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/furnihture/static/css/main.7fd5cba2.chunk.css",
-    "main.js": "/furnihture/static/js/main.d6403fa7.chunk.js",
-    "main.js.map": "/furnihture/static/js/main.d6403fa7.chunk.js.map",
+    "main.js": "/furnihture/static/js/main.4dcf60b0.chunk.js",
+    "main.js.map": "/furnihture/static/js/main.4dcf60b0.chunk.js.map",
     "runtime-main.js": "/furnihture/static/js/runtime-main.9efc652b.js",
     "runtime-main.js.map": "/furnihture/static/js/runtime-main.9efc652b.js.map",
     "static/css/2.ef9168ec.chunk.css": "/furnihture/static/css/2.ef9168ec.chunk.css",
@@ -19,6 +19,6 @@
     "static/css/2.ef9168ec.chunk.css",
     "static/js/2.bad1321f.chunk.js",
     "static/css/main.7fd5cba2.chunk.css",
-    "static/js/main.d6403fa7.chunk.js"
+    "static/js/main.4dcf60b0.chunk.js"
   ]
 }
