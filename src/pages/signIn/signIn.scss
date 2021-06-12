@@ -1,47 +1,42 @@
-.signin{
-    // transform: scale(0.8,0.8);
-    height:calc( 100vh - 60px);
-    position: absolute;
-    color:chocolate;
+.signin {
+  // transform: scale(0.8,0.8);
+  height: calc(100vh - 60px);
+  position: absolute;
+  color: chocolate;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+  .form > div,
+  .form > button {
+    margin-top: 2rem;
+  }
+
+  .title {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    width: 100%;
-    padding-bottom: 2rem;
-    padding-top: 2rem;
-    .form > div, .form > button{
-        margin-top:2rem;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    max-width: 500px;
+    justify-content: space-evenly;
+    // background: chocolate;
+
+    .clump-together {
+      padding-top: 2rem;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      // border:2px solid blue;
+      justify-content: center;
     }
-    
-    .title{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        
-    }
-    
-
-    form{
-        display: flex;  
-        flex-direction: column;
-        align-items: center;
-        width:80%;
-        max-width:500px;
-        justify-content: space-evenly;
-        // background: chocolate;
-    
-        .clump-together{
-            padding-top: 2rem;
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            // border:2px solid blue;
-            justify-content: center;
-            
-        }
-
-    }
-
-
+  }
 }

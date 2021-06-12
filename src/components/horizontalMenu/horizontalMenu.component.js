@@ -69,16 +69,16 @@ class HorizontalMenu extends React.Component {
           {Object.keys(links).map((obj, idx) => (
             <span key={idx}>
               {/* <Link to={links[obj]} style={{ textDecoration: "none" }}> */}
-                <li
-                  className={`item ${show ? "show" : ""}`}
-                  onClick={() => {
-                    if(history.location.pathname!==links[obj])
-                        history.push(links[obj])
-                    this.setState({ checked: false });
-                  }}
-                >
-                  {obj}
-                </li>
+              <li
+                className={`item ${show ? "show" : ""}`}
+                onClick={() => {
+                  if (history.location.pathname !== links[obj])
+                    history.push(links[obj]);
+                  this.setState({ checked: false });
+                }}
+              >
+                {obj}
+              </li>
               {/* </Link> */}
             </span>
           ))}

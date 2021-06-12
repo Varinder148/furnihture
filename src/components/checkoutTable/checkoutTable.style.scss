@@ -1,129 +1,116 @@
-.net-total{
-    font-size: 1.5rem;;
-    text-align:right;
-    color:black;
-    display:flex;
-    align-items: center;
-    justify-content: flex-end;
-    
-    flex-direction: row;
-    width:80%;
-    margin:2rem auto;
-    
-    
-    
-    :nth-child(2){
-        text-align: left;
-    }
-    :nth-child(1){
-        text-align: right;
-        padding-right:5px;
-    }
-    :nth-child(3){
-        border:2px solid chocolate;
-        
-        font-size: 1rem;
-        text-align: center;
-        
-    }
-    :nth-child(n){
+.net-total {
+  font-size: 1.5rem;
+  text-align: right;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  flex-direction: row;
+  width: 80%;
+  margin: 2rem auto;
+
+  :nth-child(2) {
+    text-align: left;
+  }
+  :nth-child(1) {
+    text-align: right;
+    padding-right: 5px;
+  }
+  :nth-child(3) {
+    border: 2px solid chocolate;
+
+    font-size: 1rem;
+    text-align: center;
+  }
+  :nth-child(n) {
+    margin: auto 0px;
+    width: 200px;
+  }
+
+  button {
+    border-radius: 5px;
+    padding: 10px;
+    font-family: "Shadows Into Light";
+    font-weight: 700;
+    background: transparent;
+    text-align: center;
+  }
+}
+.checkout {
+  overflow-y: scroll;
+  color: black;
+  border-top: 1px solid chocolate;
+  border-bottom: 1px solid chocolate;
+  margin-right: 10%;
+  margin-left: 10%;
+  margin-top: 2rem;
+  display: flex;
+  font-weight: 300;
+  font-size: 1.5rem;
+  flex-direction: column;
+
+  h3 {
+    text-align: center;
+  }
+
+  .list-content {
+    display: grid;
+    grid-template-columns: 5fr 3fr 3fr;
+    overflow: hidden;
+    > div {
+      width: 100%;
+      overflow: hidden;
+      margin: auto 0px;
+
+      .aligned {
         margin: auto 0px;
-        width:200px;
-    }
-
-    button{
-        border-radius:5px;
-        padding:10px;
-        font-family: 'Shadows Into Light';
-        font-weight: 700;
-        background: transparent;
-        text-align: center;
-    }
-}
-.checkout{
-    overflow-y:scroll;
-    color: black;
-    border-top: 1px solid chocolate;
-    border-bottom: 1px solid chocolate;
-    margin-right: 10%;
-    margin-left:10%;
-    margin-top: 2rem;
-    display: flex;
-    font-weight: 300;
-    font-size: 1.5rem;
-    flex-direction: column;
-    
-    h3{
-        text-align: center;
-    }
-
-
-    .list-content{
         display: grid;
-        grid-template-columns: 5fr 3fr 3fr;
-        overflow: hidden;
-        >div{
-            width:100%;
-            overflow: hidden;
-            margin:auto 0px;
-            
-            .aligned{
-                margin: auto 0px;
-                display: grid;
-                
-                width:100%;
-                grid-template-columns:1fr 4fr 1fr;
-                text-align: center;
-                
-            }
-            img{
-                margin:5px;
-                height:50px;
-                width:50px;
-            }
-        }
-    }
 
+        width: 100%;
+        grid-template-columns: 1fr 4fr 1fr;
+        text-align: center;
+      }
+      img {
+        margin: 5px;
+        height: 50px;
+        width: 50px;
+      }
+    }
+  }
 
-    
+  ul {
+    margin: 2rem 0px;
+    overflow-y: scroll;
+    height: fit-content;
+    max-height: 30vh;
+  }
 
-    ul{
-        margin:2rem 0px;
-        overflow-y: scroll;
-        height:fit-content;
-        max-height:30vh;
-    }
-    
-    .clickable:hover{
-        cursor: pointer;
-    }
-    img{
-        height:200px;
-        width:200px;
-    }
+  .clickable:hover {
+    cursor: pointer;
+  }
+  img {
+    height: 200px;
+    width: 200px;
+  }
 }
 
+@media (max-width: 900px) {
+  .checkout {
+    font-weight: 500;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
 
-
-
-@media (max-width:900px){
-    .checkout{
-        font-weight: 500;
-        width:95%;
-        margin-left: auto;
-        margin-right: auto;
-        
-        li{
-            font-size: 20px;
-        }
+    li {
+      font-size: 20px;
     }
-    .net-total{
-        font-size: 1.5rem;
-        :nth-child(n){
-            text-align: center;
-            width:30%;
-        }
-        
-     
+  }
+  .net-total {
+    font-size: 1.5rem;
+    :nth-child(n) {
+      text-align: center;
+      width: 30%;
     }
+  }
 }

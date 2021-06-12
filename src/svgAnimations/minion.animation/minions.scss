@@ -1,25 +1,30 @@
-#ballguy{
-    animation: 5s jump ease infinite;
+#ballguy {
+  animation: 5s jump ease infinite;
 }
 
-#leftarm{
-    transform-origin: 100% 110%;
-    transform-box: fill-box;
-    animation: 1s wave ease infinite;
-    
+#leftarm {
+  transform-origin: 100% 110%;
+  transform-box: fill-box;
+  animation: 1s wave ease infinite;
 }
 
 @keyframes jump {
-    0% { transform: translateX(0)
-         translateY(0%)}
-    10% { transform: translateX(0.5%) 
-        translateY(-13%)}
-    20% { transform: translateX(0)
-        translateY(0%)}
-       
-    }
+  0% {
+    transform: translateX(0) translateY(0%);
+  }
+  10% {
+    transform: translateX(0.5%) translateY(-13%);
+  }
+  20% {
+    transform: translateX(0) translateY(0%);
+  }
+}
 
 @keyframes wave {
-    0% { transform: rotate(0);}
-    50% { transform: rotate(30deg)}
+  0% {
+    transform: rotate(0);
+  }
+  50% {
+    transform: rotate(30deg);
+  }
 }
