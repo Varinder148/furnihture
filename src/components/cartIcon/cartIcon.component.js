@@ -1,8 +1,5 @@
 import React from "react";
-import {
-  faShoppingBag,
-  faShoppingCart,
-} from "@fortawesome/free-solid-svg-icons";
+import { faShoppingBag } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./cartIcon.styles.scss";
 import { toggleCartHidden } from "../../redux/cart/cart.action";

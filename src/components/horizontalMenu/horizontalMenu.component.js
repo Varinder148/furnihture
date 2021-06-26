@@ -1,18 +1,13 @@
 import React from "react";
 import "./horizontalMenu.styles.scss";
 import {
-  faAddressCard,
-  faAngleDoubleRight,
   faBars,
-  faShoppingBag,
-  faShoppingCart,
   faTimes,
-  faWindowClose,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { connect } from "react-redux";
 import CartIcon from "../cartIcon/cartIcon.component";
-import { withRouter, Link } from "react-router-dom";
+import { withRouter} from "react-router-dom";
 import { createStructuredSelector } from "reselect";
 import { currUser } from "../../redux/user/user.selectors";
 import { unsetUser } from "../../redux/user/user.actions";

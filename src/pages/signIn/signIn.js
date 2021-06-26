@@ -198,4 +198,4 @@ const mapDispatchToProps = (dispatch) => ({
 const mapStateToProps = ({ user: { spinner } }) => ({
   spinner,
 });
-export default connect(null, mapDispatchToProps)(withRouter(SignIn));
+export default connect(mapStateToProps, mapDispatchToProps)(withRouter(SignIn));

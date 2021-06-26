@@ -1,6 +1,5 @@
-import { text } from "@fortawesome/fontawesome-svg-core";
 import React, { useRef } from "react";
-import { Button, Overlay, OverlayTrigger, Tooltip } from "react-bootstrap";
+import { OverlayTrigger, Tooltip } from "react-bootstrap";
 import "./customTextField.styles.scss";
 
 const CustomTextField = (props) => {

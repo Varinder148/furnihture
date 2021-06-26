@@ -1,9 +1,6 @@
-import React, { useEffect, useRef } from "react";
+import React from "react";
 import "./categories.style.scss";
-
-import { Timeline, Controls, PlayState, Tween } from "react-gsap";
-import { Container, Row, Col, Card, CardTitle } from "react-bootstrap";
-import CustomHeading from "../customHeading/customHeading.component";
+import { Container, Row, Col, Card} from "react-bootstrap";
 
 import { Link } from "react-router-dom";
 

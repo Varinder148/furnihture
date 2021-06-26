@@ -1,8 +1,6 @@
 import React from "react";
 import "./cardHolder.styles.scss";
-import CustomButton from "../customButton/customButton.component";
 import CustomCard from "../card/card.component";
-import { Container, Row, Col } from "react-bootstrap";
 import "./cardHolder.styles.scss";
 
 const CardHolder = (props) => {

@@ -2,7 +2,7 @@ import React from "react";
 import "./navbar.styles.scss";
 import "../horizontalMenu/horizontalMenu.component";
 import HorizontalMenu from "../horizontalMenu/horizontalMenu.component";
-import { Redirect, withRouter } from "react-router";
+import { withRouter } from "react-router";
 import CartIconMenu from "../cartIconMenu/cartIconMenu.component";
 import LogoBlack from "../../svgAnimations/logo/logoBlack.image";
 import Logo from "../../svgAnimations/logo/logo.image";
