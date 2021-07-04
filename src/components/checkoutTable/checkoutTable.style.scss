@@ -114,3 +114,35 @@
     }
   }
 }
+
+.tumbleweed-wrapper {
+  height: 5rem;
+  overflow: hidden;
+  .tumbleweed {
+    transform: translateX(-4rem);
+    animation: fallin-riseup 5s linear;
+    height: 3rem;
+    width: 3rem;
+  }
+}
+
+@keyframes fallin-riseup {
+  0% {
+    transform: translateY(0rem) translateX(0vw) rotateZ(360deg);
+  }
+  20% {
+    transform: translateY(2rem) translateX(20vw) rotateZ(360deg * 2);
+  }
+  40% {
+    transform: translateY(0rem) translateX(40vw) rotateZ(360deg * 3);
+  }
+  60% {
+    transform: translateY(2rem) translateX(60vw) rotateZ(360deg * 4);
+  }
+  80% {
+    transform: translateY(0rem) translateX(80vw) rotateZ(360deg * 5);
+  }
+  100% {
+    transform: translateY(2rem) translateX(100vw) rotateZ(360deg * 6);
+  }
+}

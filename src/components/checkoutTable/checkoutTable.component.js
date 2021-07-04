@@ -111,9 +111,10 @@ const CheckoutTable = ({
             <>
               <h3>
                 So empty..
-                <br />
-                ..just like our pockets
               </h3>
+              <div className='tumbleweed-wrapper'>
+              <img className='tumbleweed' src='https://image.emojipng.com/630/704630-small.png' alt='tumbleweed'></img>
+              </div>
             </>
           )}
         </ul>
