@@ -120,9 +120,9 @@
   overflow: hidden;
   .tumbleweed {
     transform: translateX(-4rem);
-    animation: fallin-riseup 5s linear;
+    animation: fallin-riseup 3s linear infinite;
     height: 3rem;
-    width: 3rem;
+    width: auto;
   }
 }
 

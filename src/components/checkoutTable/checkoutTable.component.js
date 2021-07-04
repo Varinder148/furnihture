@@ -16,6 +16,8 @@ import {
 } from "../../redux/cart/cart.selectors";
 import { currUser } from "../../redux/user/user.selectors";
 import MsgPopup from "../msgPopup/msgPopup.component";
+import tumbleweed from '../../assets/tumbleweed.png'
+
 
 const CheckoutTable = ({
   total,
@@ -113,7 +115,7 @@ const CheckoutTable = ({
                 So empty..
               </h3>
               <div className='tumbleweed-wrapper'>
-              <img className='tumbleweed' src='https://image.emojipng.com/630/704630-small.png' alt='tumbleweed'></img>
+              <img className='tumbleweed' src={tumbleweed} alt='tumbleweed'></img>
               </div>
             </>
           )}
